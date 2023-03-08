@@ -1,0 +1,103 @@
+
+.heroSection{
+    /* background-color: rgb(228, 228, 228); */
+    margin-top: 87px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    height: 750px;
+}
+
+.hero1{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:24px;
+    margin-left: 10%;
+    margin-right:5%;
+    
+}
+
+.hero1 h1{
+    max-width: 450px;
+}
+
+.hero1 p{
+    max-width: 400px;
+}
+
+.hero2{
+    flex: 1;
+    margin: auto;
+    height: 90%;
+    background-image:url("../img/hero/IT-Herren-Spring3.jpg");
+    background-size: cover;
+    margin-right: 10%;
+    margin-left:5%;
+    min-width:400px;
+   
+}
+
+@media(max-width:992px){
+    .heroSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        margin-top: 61px;
+        height: 100vh;
+        background-color: #efefef;
+        width: 100%;
+        padding-bottom: 50px;
+    }
+
+    .hero1{
+        margin: 0;
+        order: 2;
+        background-color: white;
+        height: auto;
+        flex : 0;
+        margin-top: -100px;
+        padding: 50px;
+    }
+
+
+    .hero2{
+        background-size:cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        order: 1;
+        width: 100%;
+    }
+
+
+}
+
+@media(max-width:576px){
+
+    .heroSection{
+        padding:0;
+        height:700px;
+        width: 100%;
+
+    }
+    .hero1{
+        width: 100%;
+        padding: 30px 12px;
+        margin-top: 0;
+
+    }
+    .hero2{
+        width: 100%;
+        min-width:auto;
+        
+       
+
+    }
+}
+
+
+
+
