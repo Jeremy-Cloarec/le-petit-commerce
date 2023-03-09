@@ -16,12 +16,16 @@
     text-align: center;
     gap:24px;
     margin-left: 10%;
-    margin-right:5%;
+    margin-right:3%;
     
 }
 
 .hero1 h1{
     max-width: 450px;
+    
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .hero1 p{
@@ -35,8 +39,8 @@
     background-image:url("../img/hero/IT-Herren-Spring3.jpg");
     background-size: cover;
     margin-right: 10%;
-    margin-left:5%;
-    min-width:400px;
+    margin-left:3%;
+    min-width:370px;
    
 }
 
