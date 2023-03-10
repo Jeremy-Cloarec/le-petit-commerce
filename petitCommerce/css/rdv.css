@@ -1,0 +1,167 @@
+
+
+.containerRdv{
+    padding:  80px 50px;
+}
+
+.fauxMenu{
+    width: 100%;
+    height: 90px;
+    background-color: rgb(150, 150, 150);
+}
+
+.containerRdv1{
+    display: flex;
+    justify-content: center;
+    
+
+}
+.formulaireImage{
+
+    flex: 1;
+    width: 200px;
+    /* background-image: url("../img/personnalShoper/personalShoper.webp");
+    min-height: 100vh; */
+    display: flex;
+    justify-content: end;
+}
+
+.formulaireImage img{
+   
+    
+    width: 370px;
+    height: 300px;
+    object-fit:cover; 
+    margin-top: 120px;
+    margin-right: -50px;
+    border-radius: 8px;
+}
+
+.prendreRdv{
+    flex: 1;
+    margin-left: -50px;
+   
+ 
+}
+
+
+.prendreRdv h1{
+    padding-bottom: 18px;
+    
+}
+
+
+.descriptionRdv{
+    padding: 30px;
+    background-color: white;
+    width: 400px;
+    box-shadow:4px 4px 8px #26262649;
+    border-radius: 8px;
+
+}
+
+/* Formulaire */
+
+.containerRdv2{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    max-width: 380px;
+    margin: auto;
+}
+
+.containerRdv h2 {
+    text-align: center;
+}
+
+.formulaireRdv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+}
+
+.labelRdv{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.formulaireRdv input{
+    width: 100%;
+    max-width: 380px;
+    height: 30px;
+    border-radius:8px;
+    border: 1px #262626bb solid;
+    padding: 0 8px;
+    color: #262626bb;
+   
+}
+
+.formulaireRdv input:focus{
+    outline:1px #262626 solid;
+    
+
+}
+.formulaireRdv input::placeholder{
+   
+    color:#26262691;
+
+}
+
+
+
+
+
+@media(max-width:992px){
+
+    .containerRdv{
+        padding: 30px 18px;
+    }
+    .containerRdv h1{
+        text-align: center;
+        
+    }
+    .prendreRdv{
+        margin: auto;
+    }
+
+    .formulaireImage{
+        max-width:auto;
+        width: auto;
+    }
+    .formulaireImage img{
+        max-width:auto;
+        width:100%;
+        margin: auto;
+
+
+    }
+
+    .containerRdv1{
+        flex-direction: column;
+        max-width:586px ;
+        margin: auto;
+    }
+
+    .descriptionRdv{
+        padding: 18px;
+        width: 100%;
+        margin-top: 30px;
+
+    }
+
+    .containerRdv2{
+        padding-top:35px;
+    }
+    
+}
+
+@media(max-width:576px){
+
+    
+    
+
+}

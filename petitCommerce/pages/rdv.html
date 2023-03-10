@@ -4,25 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/petitCommerce/css/style.css">
-    <link rel="stylesheet" href="/petitCommerce/css/rdv.css">
+   
+    <link rel="stylesheet" href="../css/rdv.css">
+    <link rel="stylesheet" href="../css/style.css">
     
     <title>Prendre rendez-vous</title>
 
 </head>
 <body>
-    <div class="container">
-        
-        <div class="prendreRDV">
-            <h1>Prendre rendez-vous avec nos coachs personnal shoper</h1>
-        <form action="#" method="post">
-            <input placeholder="Nom de famille" name="name" type="text">
-            <input placeholder="Adresse e-mail" name="email" type="email">
-            <input placeholder="Numéro de contact" name="number" type="number">
-            <input name="date" type ="date" required="">
-            <input placeholder="Entrer l'horaire souhaité" name="time" type="time">
-        </form>
-
+    <div class="fauxMenu"></div>
+    <div class="containerRdv">
+        <div class="containerRdv1">
+            <div class="formulaireImage">
+                <img src="../img/personnalShoper/personalShoper.webp" alt="">
+            </div>
+            <div class="prendreRdv">
+                <div class="descriptionRdv">
+                    <h1>Personnal shoper</h1>
+                    <p>Un service exclusif offert sans minimum d'achat, disponible en magasin ou en ligne. <br>
+                    Où que vous soyez, nos Personal Shoppers vous guident parmi les 3 000 marques du Printemps, pour trouver la perle rare.</p>
+                </div>
+            </div>
+        </div>
+        <div class="containerRdv2">
+            <h2>Prendre rendez-vous</h2>
+            <form action="#" method="post" class="formulaireRdv">
+                <div class="labelRdv">
+                    <label for="name">Nom de famille</label>
+                    <input placeholder="Nom de famille" name="name" type="text">
+                </div>
+                <div class="labelRdv">
+                    <label for="e-mail">Adresse e-mail</label>
+                    <input placeholder="Adresse e-mail" name="email" type="email">
+                </div>
+                <div class="labelRdv">
+                    <label for="number">Numéro de contact</label>
+                    <input placeholder="Numéro de contact" name="number" type="number">
+                </div>
+                <div class="labelRdv">
+                    <label for="date">Choisissez votre date</label>
+                    <input name="date" type ="date" required="">
+                </div>
+                <div class="labelRdv">
+                    <label for="time">Entrer l'horaire souhaité</label>
+                    <input placeholder="Entrer l'horaire souhaité" name="time" type="time">
+                </div>
+                <button class="cta">
+                    <a href="#">Prendre rendez-vous</a>
+                </button>
+            </form>
         </div>
     </div>
 
