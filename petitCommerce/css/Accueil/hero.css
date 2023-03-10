@@ -36,7 +36,7 @@
     flex: 1;
     margin: auto;
     height: 90%;
-    background-image:url("../img/hero/IT-Herren-Spring3.jpg");
+    background-image:url("../../img/hero/IT-Herren-Spring3.jpg");
     background-size: cover;
     margin-right: 10%;
     margin-left:3%;
@@ -81,6 +81,7 @@
 }
 
 @media(max-width:576px){
+    
 
     .heroSection{
         padding:0;

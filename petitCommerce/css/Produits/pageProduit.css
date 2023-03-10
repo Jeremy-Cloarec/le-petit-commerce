@@ -1,0 +1,45 @@
+
+
+
+.containerPageProduit{
+    display: flex;
+    max-width: 100%;
+}
+
+.imagePageProduit{
+    height: 300px;
+}
+
+.imageProduit{
+    width: 100%;
+    height: 100%;
+}
+
+.containerPageProduit .swiper-wrapper{
+   width: 100%;
+    background-color: antiquewhite;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:992px){
+    
+}
+@media(max-width:576px){
+
+}
