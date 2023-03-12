@@ -8,13 +8,14 @@
 .containerPageProduit{
     display: flex;
     padding: 50px;
-    gap: 18px;
-    flex-wrap: wrap;
+    gap: 24px;
+    max-width: 1080px;
+    margin: auto;
 }
 
 .imagePageProduit{
     min-height: 380px;
-    max-height: 85vh;
+    max-height: 80vh;
 
 }
 
@@ -37,38 +38,109 @@
     
 }
 
-.containerPageProduit .swiper-wrapper{
 
-background-color: antiquewhite;
-}
-
-.descriptionPageProduit{
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 35%;
-}
-
+/* Navigation */
 .containerPageProduit .swiper-pagination-bullets  { 
 margin-right:4px;
+
 }
 
 .containerPageProduit .swiper-pagination-bullet-active{
     background-color:#262626;
 }
 
+.swiper-scrollbar-drag{
+    width: 2px;
+    background-color: #2626269a;
+}
+.swiper-scrollbar.swiper-scrollbar-vertical, .swiper-vertical>.swiper-scrollbar{
+    width: 2px;
+    right: 0;
+    top:0;
+}
 
 .card{
     width: 300px;
     
 }
 
-/* Vous aimerez peut-être */
+/* Description produit*/
 
-.containerGlobalPageProduit h2{
+.descriptionPageProduit{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 15px;
+    width: 35%;
+
+}
+
+.nomPrixPP{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Accordeon */
+
+.accordeonPP{
+    border: 0.75px solid #26262649 ;
+    padding: 8px;
+    border-radius: 8px;
+
+}
+.accordeonPPTitleIcone{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.titleAccordeonPP{
+    font-weight: 600;
+}
+
+.accordeonPPPlus{
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+.descriptionAccordeonPP{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s linear ;
+}
+
+/* choix couleurs*/
+
+.couleursDisponibles{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.rondCouleur{
+    height: 30px;
+    width: 30px;
+    background-color: #efefef;
+    border-radius: 50%;
+}
+.choisirTaille{
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.choixTaille{
+    height: 30px;
+    width: 30px;
+    background-color: #efefef;
     text-align: center;
-
+    line-height: 30px;
+    font-size: 16px;
+    
 }
 
 
@@ -79,20 +151,107 @@ margin-right:4px;
 
 
 
+/* Vous aimerez peut-être */
 
-
-
-
-
-
+.containerGlobalPageProduit h2{
+    text-align: center;
+}
 
 
 
 
 
 @media(max-width:992px){
+    .containerPageProduit{
+        padding: 50px 18px;
+        flex-direction: column;
+        width: 100%;
+        max-width: 615px;
+        margin: auto;
+        
+    }
+
+    .containerPageProduit .swiper{
+        margin-left: 0;
+        
+    }
+
+    .imagePageProduit{
+        justify-content: center;
+        /* min-width: 450px; */
+        /* min-height:350px; */
+        max-height: 70vh;
+    }
+
+   
+    .imageProduit {
+        margin-right: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .descriptionPageProduit{
+        gap: 8px;
+
+    }
+
+
+
+    .imageProduit img{
+       
+        min-height: 100%;
+        width:100%;
+        /* object-fit: contain; */
+        
+    }
+    
+
+
+
+
+    .descriptionPageProduit{
+        width: 100%;
+        /* flex: 3; */
+        justify-content:flex-start;
+
+    }
     
 }
-@media(max-width:576px){
+/* 
+@media(max-width:570px){
+    .containerPageProduit{
+        height: 90vh;
+    }
+}
+@media(max-width:470px){
+    .containerPageProduit{
+        height: 80vh;
+    }
+}
+@media(max-width:370px){
+    .containerPageProduit{
+        height: 70vh;
+    }
+}
+ */
 
+
+
+    @media(max-width:400px){
+        /* .imageProduit img{
+            min-width:100%;
+
+        } */
+    }
+
+
+@media(max-width:576px){
+    .containerPageProduit{
+        padding: 35px 0px;
+    }
+    .descriptionPageProduit{
+        padding: 0 12px;
+    }
+   
 }
