@@ -25,10 +25,13 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
+
+
 //Accordeon
 
 const accordeonPP = document.querySelectorAll('.accordeonPP')
 
+console.log(accordeonPP);
 
 accordeonPP.forEach((item, index)=>{
 
@@ -63,7 +66,43 @@ function removeOpen(index1){
 }
 
 
+// Selection couleurs
 
 
+let choixTaille =document.querySelectorAll('.choixTaille')
+console.log(choixTaille);
+
+// let tailleChoisieCompteur=0; 
+
+choixTaille.forEach((item,index)=>{
+  
+  console.log(choixTaille);
+
+  let tailleChoisie = item.querySelector('.tailleChoisie')
+
+  console.log(tailleChoisie);
+
+
+  tailleChoisie.addEventListener("click", ()=>{
+    
+
+    tailleChoisie.classList.toggle("open");
+    
+    // tailleChoisie.classList.toggle("tailleSelectionnee");
+
+   
+    // let tailleChoisieCompteurPlus= ++tailleChoisieCompteur;
+    // console.log(tailleChoisieCompteurPlus);
+
+    if(tailleChoisie.classList.contains("open")){
+      console.log(true);
+    }
+
+    
+   
+
+  })
+
+})
 
 
