@@ -28,35 +28,40 @@
         </div>
         <div class="containerRdv2">
             <h2>Prendre rendez-vous</h2>
-            <form action="#" method="post" class="formulaireRdv">
+            <form action="#" method="post" class="formulaireRdv" id="myForm">
                 <div class="labelRdv">
                     <label for="name">Nom de famille</label>
-                    <input placeholder="Dupont" name="name" type="text">
+                    <input id="name" placeholder="Dupont" name="name" type="text">
+
                 </div>
                 <div class="labelRdv">
                     <label for="e-mail">Adresse e-mail</label>
-                    <input placeholder="xxx@xxx.com" name="email" type="email">
+                    <input id="email" placeholder="xxx@xxx.com" name="email" type="email">
+
                 </div>
                 <div class="labelRdv">
                     <label for="number">Numéro de contact</label>
-                    <input placeholder="06xxxxxxxx" name="number" type="number">
+                    <input id="number" placeholder="06xxxxxxxx" name="number" type="number">
+
                 </div>
                 <div class="labelRdv">
                     <label for="date">Choisissez votre date</label>
-                    <input name="date" type ="date" required="">
+                    <input id="date" name="date" type ="date" required="">
+                    
                 </div>
                 <div class="labelRdv">
                     <label for="time">Entrer l'horaire souhaité</label>
-                    <input placeholder="Entrer l'horaire souhaité" name="time" type="time">
+                    <input id="time" placeholder="Entrer l'horaire souhaité" name="time" type="time">
+
                 </div>
-                <button class="cta">
+                <button class="cta" id="buttonFormulaire">
                     <a href="#">Prendre rendez-vous</a>
                 </button>
             </form>
         </div>
     </div>
 
-    <!-- https://www.youtube.com/watch?v=voBTPw2nyNE -->
+    <script src="../js/rdv.js"></script>
 
     
 
