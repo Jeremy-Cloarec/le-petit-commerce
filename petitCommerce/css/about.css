@@ -1,0 +1,31 @@
+.navbarFausse{
+    height: 70px;
+    background-color: rgb(221, 221, 221);
+}
+
+.containerHeaderAbout, .containerMainAbout {
+    padding : 0 50px;
+}
+
+.containerAbout{
+    padding: 0 50px;
+}
+
+.titreAbout{
+    display: flex;
+}
+
+.titreAbout p, .titreAbout h1{
+    flex: 1;
+}
+.titreAbout h1{
+    text-align: center;
+}
+
+.imgHeaderAbout{
+    background-image:url("../img/About/about_header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+}
