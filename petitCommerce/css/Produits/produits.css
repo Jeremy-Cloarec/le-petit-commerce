@@ -2,7 +2,7 @@
 .fauxHeader{
     height:90px;
     width: 100%;
-    background-color: grey;
+    background-color: rgb(201, 198, 198);
 }
 
 
@@ -13,7 +13,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 6px;
-    margin-bottom: 35px;
+    margin-bottom: 60px;
 }
 
 .categoriesProduits a{
@@ -31,12 +31,22 @@
     border-radius: 30px;
 }
 
-.categoriesProduits a:hover{
-    background-color: #2626260e;
+.categoriesProduits a.active:hover{
+    color: white;
+    background-color: #262626;
+    border: 1px solid #262626;
+    border-radius: 30px;
 }
 
 
 
+.categoriesProduits a:hover{
+    background-color: #2626260e;
+}
+
+#h1Produit{
+    margin: 10px 0 60px 0;
+}
 
 
 

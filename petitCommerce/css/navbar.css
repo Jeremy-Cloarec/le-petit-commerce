@@ -11,7 +11,7 @@ nav{
     height: 70px;
     background-color: white;
     border-bottom: 1px solid rgba(41, 41, 4, 0.3);
-    order:1000;
+    z-index:100;
 }
 
 /* On cache les éléments du menu responsive */

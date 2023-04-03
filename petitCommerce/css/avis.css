@@ -1,0 +1,131 @@
+
+body{
+    height: 3000px;
+}
+.containerProduits p{
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+    max-width: 800px;
+}
+
+#h1Produit{
+    margin-bottom: 30px;
+}
+
+
+.categoriesProduits{
+    margin-bottom: 0;
+}
+
+.avisContainer{
+    width: 100%;
+    display: flex;
+    padding: 0 50px;
+    gap: 24px;
+}
+
+
+
+#h2Produit{
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.avisClients{
+    flex:3;
+    background-color:white; 
+}
+.avisFormulaire{
+    height: 300px;
+    flex:1;
+    background-color:rgb(179, 108, 15);
+    position: sticky;
+    top : 20px;
+}
+
+.gridProduits{
+    grid-template-columns: repeat(3,1fr)    
+}
+
+.cardAvis{
+    background-color:white;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    box-shadow:3px 3px 10px #26262649;
+    
+}
+
+.avisEtoiles{
+    white-space: nowrap;
+}
+
+.nameCardeAvis p{
+    font-size: 10px;
+    font-weight: 600;
+    padding: 8px 0;
+}
+
+.commentaireAvis p{
+    font-size: 12px;
+}
+
+.headerCardAvis{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.imgCardAvis img{
+    width: 55px;
+}
+
+@media(max-width:992px){
+
+    .avisContainer{
+        padding: 0 18px;
+        flex-direction: column;
+    }
+    .avisFormulaire{
+        height: 150px;
+        width: 100%;
+        flex: auto;
+        order: 1;
+        position:static;
+    }
+
+    .avisClients{
+        order: 2;
+        
+    }
+    .gridProduits{
+        grid-template-columns: repeat(2,1fr);    
+       
+    }
+
+}
+
+@media(max-width:576px){
+    .gridProduits{
+        gap: 8px;
+    }
+    .cardAvis{
+        padding: 12px;
+    }
+
+    .headerCardAvis{
+        flex-direction: column;
+        gap: 0px;
+    }
+}
+@media(max-width:400px){
+
+    .gridProduits{
+        grid-template-columns: repeat(1,1fr);     
+    }
+}
+
+
