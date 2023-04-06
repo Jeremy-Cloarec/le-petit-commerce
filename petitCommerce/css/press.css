@@ -1,0 +1,14 @@
+.pressActualites{
+    display: flex;
+    flex-direction: column;    
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    color: white;
+    background-image:url("../img/Actualites/actualites_press.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 380px;
+}

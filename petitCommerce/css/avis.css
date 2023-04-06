@@ -1,7 +1,4 @@
 
-body{
-    height: 3000px;
-}
 .containerProduits p{
     text-align: center;
     margin: auto;
@@ -18,6 +15,10 @@ body{
     margin-bottom: 0;
 }
 
+.containerProduits {
+    padding : 80px 0;
+}
+
 .avisContainer{
     width: 100%;
     display: flex;
@@ -29,7 +30,7 @@ body{
 
 #h2Produit{
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 
 }
 
@@ -37,13 +38,7 @@ body{
     flex:3;
     background-color:white; 
 }
-.avisFormulaire{
-    height: 300px;
-    flex:1;
-    background-color:rgb(179, 108, 15);
-    position: sticky;
-    top : 20px;
-}
+
 
 .gridProduits{
     grid-template-columns: repeat(3,1fr)    
@@ -64,13 +59,13 @@ body{
 }
 
 .nameCardeAvis p{
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 600;
     padding: 8px 0;
 }
 
 .commentaireAvis p{
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .headerCardAvis{
@@ -83,6 +78,68 @@ body{
     width: 55px;
 }
 
+
+
+
+
+
+.avisFormulaire{
+    flex: 1;
+    background-color:rgb(235, 235, 235);
+    padding: 24px 12px;
+    border-radius:8px;
+    box-shadow: 3px 3px 10px #26262649;
+    position: sticky;
+    top : 20px;
+    align-self: flex-start;
+}
+#formAvis{
+    max-width: 800px;
+    margin: auto;
+}
+
+#formAvis input{
+    max-width: none;
+}
+#formAvis .labelRdv textarea{
+    max-width: none;
+}
+
+.titreAvisForm{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.etoileContainerAvis{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.etoileContainerAvis .avisEtoiles{
+    text-align: center;
+
+}
+
+.etoileContainerAvis .avisEtoiles .material-symbols-outlined{
+    font-size: 40px;
+    cursor: pointer;
+
+
+}
+
+/* #formAvis #buttonFormulaire{
+    align-self:flex-start;
+} */
+
+#formAvis #buttonFormulaire a{
+    font-size: 14px;
+
+}
+
 @media(max-width:992px){
 
     .avisContainer{
@@ -90,18 +147,21 @@ body{
         flex-direction: column;
     }
     .avisFormulaire{
-        height: 150px;
         width: 100%;
+        margin:auto;
         flex: auto;
         order: 1;
         position:static;
+        margin-bottom: 35px;
+        max-width: 70%;
+        
     }
 
     .avisClients{
         order: 2;
         
     }
-    .gridProduits{
+    .avisClients .gridProduits{
         grid-template-columns: repeat(2,1fr);    
        
     }
@@ -120,11 +180,24 @@ body{
         flex-direction: column;
         gap: 0px;
     }
+
+    .containerProduits{
+        padding: 35px 0;
+    }
+
+    #h2Produit{
+        margin-bottom: 35px;
+    }
+
+    .avisFormulaire{
+        max-width: 100%;
+    }
 }
 @media(max-width:400px){
 
-    .gridProduits{
-        grid-template-columns: repeat(1,1fr);     
+    .avisClients .gridProduits{
+        grid-template-columns: repeat(1,1fr);    
+       
     }
 }
 

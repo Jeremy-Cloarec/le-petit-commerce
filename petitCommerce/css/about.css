@@ -35,8 +35,9 @@
 }
 
 .titreAbout p, .titreAbout h1{
-    max-width: 500px;
+    max-width: 600px;
     filter:none;    
+    text-align: center;
 }
 
 .titreAbout h1{

@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/Accueil/appelProduits.css">
     <link rel="stylesheet" href="../css/Produits/produits.css">
+    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/avis.css">
-    <title>Avis</title>
+    <title>Avis de nos boutiques en lign</title>
 </head>
 <body>
     <div class="fauxHeader"></div>
@@ -18,11 +19,11 @@
         <p>Découvrez les avis de nos clients et partagez votre expérience avec Le Petit Commerce ! Que vous ayez visité notre boutique en ligne ou notre boutique physique, nous sommes impatients de vous entendre. Remplissez le formulaire ci-contre pour partager votre avis et aider les autres clients à choisir leur prochaine tenue.</p>
         <div class="categoriesProduits">
             <a href="#" class="active">Nos avis en ligne</a>
-            <a href="#">Nos avis en boutique</a>
+            <a href="./avisBoutiquePhysique.html">Nos avis en boutique</a>
         </div>
     </div>
     <div class="titreAvis">
-        <h2 id="h2Produit">Avis de nos boutiques en ligne</h2>
+        <h2 id="h2Produit">Avis de notre boutiques en ligne</h2>
     </div>
     <div class="avisContainer">
         <div class="avisClients">
@@ -357,18 +358,56 @@
                         <p>"Je suis totalement satisfaite de mon expérience d'achat sur Le Petit Commerce en ligne ! La navigation est facile, la sélection de vêtements est incroyable et j'ai été impressionnée par la qualité des vêtements que j'ai reçus. Je recommande vivement ce site à tous les amateurs de shopping en ligne !"</p>
                     </div>   
                 </div>
-                
-                
-    
-                
-    
-    
-    
             </section>
-    
-
         </div>
         <div class="avisFormulaire">
+              
+                <form action="#" method="post" class="formulaireRdv" id="formAvis">
+                    <p class="titreAvisForm">Donnez-nous votre avis sur notre boutique en ligne</p>
+                    <div class="labelRdv">
+                        <label for="name">Nom de famille :</label>
+                        <input id="lastName" placeholder="Dupont" name="name" type="text">
+                    </div>
+                    <div class="labelRdv">
+                        <label for="name">Prénom :</label>
+                        <input id="firstName" placeholder="John" name="name" type="text">
+                    </div>
+                    <div class="labelRdv">
+                        <label for="e-mail">Profession :</label>
+                        <input id="entreprise" placeholder="Orange..." name="name" type="text">
+                    </div>
+                    <div class="etoileContainerAvis">
+                        <p>Comment avez-vous trouvé le produit ?</p>
+                        <div class="avisEtoiles">
+                            <span class="material-symbols-outlined star">
+                                star
+                                </span>
+                            <span class="material-symbols-outlined star">
+                                star
+                                </span>
+                            <span class="material-symbols-outlined star">
+                                star
+                                </span>
+                            <span class="material-symbols-outlined star">
+                                star
+                                </span>
+                            <span class="material-symbols-outlined greyStar">
+                                star
+                                </span>
+                        </div>
+                        
+
+                    </div>
+                    
+                    <div class="labelRdv">
+                        <label for="msg">Partager votre experience :</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </div>
+    
+                    <button class="cta" id="buttonFormulaire">
+                        <a href="#">Envoyer le message</a>
+                    </button>
+                </form>
 
         </div>
     </div>
