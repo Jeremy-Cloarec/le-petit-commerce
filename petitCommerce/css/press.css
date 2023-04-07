@@ -14,6 +14,19 @@
 }
 
 
+
+
+
+
+
+
+@media(max-width:992px){
+    .containerGallerie{
+        padding: 50px 12px;
+
+    }
+    
+}
 @media(max-width:576px){
     .pressActualites{
         padding: 60px 12px;
