@@ -6,6 +6,11 @@
     max-width: 800px;
 }
 
+#avisClients{
+    padding-bottom: 0;
+
+}
+
 #h1Produit{
     margin-bottom: 30px;
 }
@@ -23,6 +28,7 @@
     width: 100%;
     display: flex;
     padding: 0 50px;
+    margin-bottom: 50px;
     gap: 24px;
 }
 
@@ -90,7 +96,7 @@
     border-radius:8px;
     box-shadow: 3px 3px 10px #26262649;
     position: sticky;
-    top : 20px;
+    top : 90px;
     align-self: flex-start;
 }
 #formAvis{
@@ -182,7 +188,7 @@
     }
 
     .containerProduits{
-        padding: 35px 0;
+        padding: 35px 12px;
     }
 
     #h2Produit{

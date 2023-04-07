@@ -10,6 +10,12 @@
     box-sizing: border-box;
 }
 
+.fausseNavbar{
+    height: 70px;
+    background-color:rgb(202, 202, 202);
+    width: 100%;
+}
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Poppins', sans-serif;
@@ -78,6 +84,39 @@ h3{
 
 }
 
+/* Tous les produits */
+
+section.tousLesProduitAccueil{
+    margin: 100px 0;
+}
+
+section.tousLesProduitAccueil .ctaProdAll{
+    margin-bottom: 25%;
+    background-color: #262626a8;
+}
+
+section.tousLesProduitAccueil .ctaProdAll:hover{
+    background-color: #262626c5;
+    transition: all ease 0.3s ;
+}
+
+
+
+
+/* Mention légales */
+.legale{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    max-width: 1080px;
+    gap: 32px;
+}
+
+.legale h2{
+    margin-bottom: 0;
+
+}
+
 
 
 
@@ -110,6 +149,26 @@ h3{
         padding : 50px 12px;
     }
 
+/* Tous les produits */
+
+section.tousLesProduitAccueil{
+    margin: 100px 0;
+}
+
+section.tousLesProduitAccueil .ctaProdAll{
+    margin-bottom: -25px;
+}
+
+
+/* Légale */
+
+.legale{
+    margin-top: 70px;
+    padding: 50px 12px;
+}
+
+
+
 }
 @media(max-width:576px){
     body{
@@ -138,14 +197,16 @@ h3{
 
 }
 
-
     #gridProduitsAccueil{
         gap: 8px;
         grid-template-columns: repeat(1,1fr);
     }
 
 
-
 }
+
+
+
+
 
 

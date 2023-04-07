@@ -133,7 +133,8 @@ let closeOnClick = document.querySelectorAll('.closeOnClick')
 //On met un media query js pour déterminer l'affichage selon la largeur de l'écran
 
 function myFunction(x) {
-    if (x.matches) { // If media query matches
+    if (x.matches) { 
+        // If media query matches
         // document.body.style.backgroundColor = "yellow";
 
         accueilSubSub.style.display='flex';
@@ -251,6 +252,8 @@ function myFunction(x) {
             }
             exitProduitsFemmes.addEventListener('click', backOpenFemme)
 
+        
+
 
 
 //A chaque fois qu'on clique sur un lien actif, le menu se ferme.          
@@ -281,6 +284,62 @@ function myFunction(x) {
 //fermer les pages ouvertes lorsqu'on dépasse le media querie
 
         // document.body.style.backgroundColor = "pink";
+
+        //-----------------------------
+
+        //On empêche la div du sous menu de se réouvrir quand le media queri est supérieur
+
+        function openActualite (){
+            actualites.style.display='none';
+            actualites.style.left='auto';
+            console.log('yes');
+            
+        }
+        actalitesContainer.addEventListener('click', openActualite)
+
+
+        function openProduct (){
+            nosProduits.style.display='none';
+            nosProduits.style.left='auto';
+        }
+        nosProduitsContainer.addEventListener('click', openProduct)
+
+
+        function openBoutique (){
+            laBoutique.style.display='none';
+            laBoutique.style.left='auto';
+        }
+        boutiqueContainer.addEventListener('click', openBoutique)
+
+        //-----------------------------
+
+
+
+
+        //-----------------------------
+
+        //On empêche le menu de disparaître quand on clique sur un lien actif
+
+        closeOnClick.forEach(function(elem) {
+            elem.addEventListener("click", function() {
+
+                links.style.display='flex';
+
+            });
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+        //-----------------------------
         
         
         links.style.display='flex';
@@ -296,6 +355,7 @@ function myFunction(x) {
 }
 
 let x = window.matchMedia("(max-width: 992px)")
+console.log(x)
 myFunction(x) // Call listener function at run time
 x.addListener(myFunction) // Attach listener function on state changes
 

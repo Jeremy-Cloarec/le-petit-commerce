@@ -12,3 +12,12 @@
     background-size: cover;
     height: 380px;
 }
+
+
+@media(max-width:576px){
+    .pressActualites{
+        padding: 60px 12px;
+        height: auto;
+    }
+    
+}

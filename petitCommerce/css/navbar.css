@@ -21,6 +21,11 @@ nav{
     left:-100%;
 }
 
+a.logoResponsive img{
+    height: 45px;
+}
+
+
 /* __________ */
 
 .logo .menuIcon{
@@ -185,7 +190,7 @@ li.subGlobal{
         color: #262626;;
 }
 
-.categoriesProduits{
+.genre .categoriesProduits{
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -366,7 +371,7 @@ a.userIcon .material-symbols-outlined, a.searchIcon .material-symbols-outlined {
 }
 
 .searchActive .rechercher button:hover{
-    background-color: rgba(41, 41, 41, 0.8);
+    background-color: #333333;
 }
 
 

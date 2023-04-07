@@ -1,14 +1,9 @@
 
-.fauxHeader{
-    height:90px;
-    width: 100%;
-    background-color: rgb(201, 198, 198);
-}
 
 
 /* Catégorie produits */
 
-.categoriesProduits{
+.containerProduits .categoriesProduits{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -16,7 +11,7 @@
     margin-bottom: 60px;
 }
 
-.categoriesProduits a{
+.containerProduits .categoriesProduits a{
     padding: 0 12px;
     font-size: 12px;
     line-height: 24px;
@@ -45,7 +40,7 @@
 }
 
 #h1Produit{
-    margin: 10px 0 60px 0;
+    margin: 10px 0 50px 0;
 }
 
 
@@ -63,6 +58,7 @@
 
 .containerProduits{
     padding: 50px;
+    margin-top: 70px;
 }
 
 .containerProduits h1{

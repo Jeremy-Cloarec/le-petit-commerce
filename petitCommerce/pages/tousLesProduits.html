@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
     <link rel="icon" type="image/x-icon" href="../../petitCommerce/img/logoLPC.png">
 
-   
-    <link rel="stylesheet" href="../css/rdv.css">
-    <link rel="stylesheet" href="../css/style.css">
-    
-    <title>Prendre rendez-vous</title>
 
+
+    
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tousLesProduits.css">
+   
+  
+    <title>Tous les produits</title>
 </head>
 <body>
     <nav>
@@ -411,53 +413,23 @@
         </div>
     </nav>
 
-    <div class="containerRdv">
-        <div class="containerRdv1">
-            <div class="formulaireImage">
-                <img src="../img/personnalShoper/personalShoper.webp" alt="">
-            </div>
-            <div class="prendreRdv">
-                <div class="descriptionRdv">
-                    <h1>Personnal shoper</h1>
-                    <p>Un service exclusif offert sans minimum d'achat, disponible en magasin ou en ligne. <br>
-                    Où que vous soyez, nos Personal Shoppers vous guident parmi les 3 000 marques du Printemps, pour trouver la perle rare.</p>
-                </div>
-            </div>
-        </div>
-        <div class="containerRdv2">
-            <h2>Prendre rendez-vous</h2>
-            <form action="#" method="post" class="formulaireRdv" id="myForm">
-                <div class="labelRdv">
-                    <label for="name">Nom de famille</label>
-                    <input id="name" placeholder="Dupont" name="name" type="text">
-
-                </div>
-                <div class="labelRdv">
-                    <label for="e-mail">Adresse e-mail</label>
-                    <input id="email" placeholder="xxx@xxx.com" name="email" type="email">
-
-                </div>
-                <div class="labelRdv">
-                    <label for="number">Numéro de contact</label>
-                    <input id="number" placeholder="06xxxxxxxx" name="number" type="number">
-
-                </div>
-                <div class="labelRdv">
-                    <label for="date">Choisissez votre date</label>
-                    <input id="date" name="date" type ="date" required="">
-                    
-                </div>
-                <div class="labelRdv">
-                    <label for="time">Entrer l'horaire souhaité</label>
-                    <input id="time" placeholder="Entrer l'horaire souhaité" name="time" type="time">
-
-                </div>
-                <button class="cta" id="buttonFormulaire">
-                    <a href="#">Prendre rendez-vous</a>
+    <header class="tousleProduits">
+        <div class="containerTousLesProduits">
+            <div class="tousLesProdF">
+                <button class="cta ctaProdAll">
+                    <a href="../pages/produitsFemmes.html">Découvrir la collection femme</a>
                 </button>
-            </form>
+
+            </div>
+            <div class="tousLesProdH">
+                <button class="cta ctaProdAll">
+                    <a href="../pages/produitsHommes.html">Découvrir la collection homme</a>
+                </button>
+
+            </div>
+            
         </div>
-    </div>
+    </header>
     <footer>
         <div class="containerFooter">
             <div class="footerPart footer1">
@@ -504,15 +476,7 @@
             </div>
         </div>
     </footer>
-
-    <script src="../js/rdv.js"></script>
     <script src="https://kit.fontawesome.com/3c3a356350.js" crossorigin="anonymous"></script>
     <script src="../js/navbar.js"></script>   
-
-    
-
-
-
-    
 </body>
 </html>

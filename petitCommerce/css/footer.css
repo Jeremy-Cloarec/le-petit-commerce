@@ -1,0 +1,180 @@
+
+.containerFooter{
+    background-color: #efefef;
+    padding : 50px; 
+}
+
+.containerFooter h4{
+    padding-bottom: 12px;
+}
+
+
+
+.footer1{
+    padding-bottom: 42px;
+}
+
+
+
+.footerPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logoFooter{
+    display: flex;
+    align-items: center;
+    align-self: center;
+
+}
+.logoFooter img{
+    width: 97px;
+    
+}
+
+#myFormFooter{
+    flex-direction: row;
+    gap: 16px;
+}
+
+#buttonFooter a{
+    font-size: 14px;
+    padding: 8px 18px;
+}
+
+.partageReseaux{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.iconesFooter{
+    display: flex;
+    gap: 12px;
+
+}
+.iconesFooter .fa-brands{
+    font-size: 40px;
+    color: #262626;
+    cursor: pointer;
+    
+}
+
+
+
+.footer2{
+    align-items: flex-start;
+}
+
+.planSite{
+    display: flex;
+    gap: 12px;
+}
+
+.planSite a{
+    font-size: 16px;
+}
+
+.planSite a:hover{
+    text-decoration: underline;
+}
+
+.mentionsFooter{
+    display:flex;
+    gap: 12px;
+    
+}
+
+.mentionsFooter a{
+    font-size: 16px;
+}
+.mentionsFooter a:hover{
+    text-decoration: underline;
+}
+
+
+@media(max-width:992px){
+    .containerFooter{
+        padding: 50px 12px 35px;
+
+    }
+    .footerPart{
+        flex-wrap: wrap;
+    }
+
+    .logoFooter{
+        width: 18%;
+    }
+
+    .partageReseaux{
+        order: 2;
+        width: 100%;
+    }
+
+    .newsletterFooter{
+        padding-bottom: 35px;
+        width: 80%;
+    }
+    
+
+}
+
+@media(max-width:576px){
+    .containerFooter h4{
+        text-align: center;
+    }
+
+    .logoFooter, .newsletterFooter{
+        width: 100%;
+    }
+
+    .logoFooter{
+        justify-content: center;
+    }
+
+    .newsletterFooter{
+        padding: 35px 0;
+
+    }
+
+    .planSite, .mentionsFooter{
+        flex-direction: column;
+    }
+
+    #myFormFooter{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    #myFormFooter .cta{
+        width: 100%;
+    }
+    #myFormFooter .formulaireRdv input {
+        width: 100%;
+        max-width:auto;
+    }
+    #myFormFooter {
+        width: 100%;
+        max-width: none;
+    }
+
+    #myFormFooter input#name, input#email{
+        max-width: none;
+    }
+
+
+    
+   
+
+}
+
+@media(max-width:300px){
+    .planSite a, .mentionsFooter a{
+        
+        font-size: 12px;
+    }
+
+}

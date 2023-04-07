@@ -8,6 +8,7 @@
 
 .containerRdv{
     padding:  80px 50px;
+    margin-top: 20px;
 }
 
 
@@ -174,6 +175,7 @@ input[type="file"]  {
 
     .containerRdv{
         padding: 30px 18px;
+        margin-top: 70px;
     }
     .containerRdv h1{
         text-align: center;  

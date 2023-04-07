@@ -1,0 +1,58 @@
+.containerReassurance{
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 50px 0;
+}
+
+.argReassurance{
+   
+    height : 130px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 330px;
+    margin:  8px;
+    padding:12px;
+    
+}
+
+.argReassurance p{
+    text-align: center;
+    color: white;
+
+}
+
+.reaSeparateur{
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.521);
+    height: 130px;
+}
+
+
+@media(max-width:992px){
+    .containerReassurance{
+        padding:50px 12px;
+    }
+    .argReassurance{
+        padding: 0;
+    }
+}
+
+@media(max-width:576px){
+    .containerReassurance{
+        flex-direction: column;
+
+    }
+    .argReassurance p {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+    .reaSeparateur{
+        height: 50px;
+        margin:8px 0;
+    }
+}

@@ -22,3 +22,12 @@
     border-radius: 8px;
     width: 100%;
 }
+
+
+@media(max-width:576px){
+    .evenementsActualites{
+        padding: 60px 12px;
+        height: auto;
+    }
+    
+}

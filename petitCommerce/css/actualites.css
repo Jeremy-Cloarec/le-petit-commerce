@@ -68,6 +68,7 @@
 
 .contenuCardActu img {
     width: 100%;
+    border-radius: 8px;
 }
 
 
@@ -103,6 +104,13 @@
 
 }
 @media(max-width:576px){
+    .titreActualites{
+        padding: 60px 12px;
+        height: auto;
+
+
+    }
+
     .containerGallerie{
         grid-template-columns:1fr;
     }

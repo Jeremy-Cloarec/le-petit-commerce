@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tousLesProduits.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/rdv.css">
+
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0">
-    <link rel="icon" type="image/x-icon" href="../../petitCommerce/img/logoLPC.png">
+    <link rel="icon" type="image/x-icon" href="../petitCommerce/img/logoLPC.png">
 
-   
-    <link rel="stylesheet" href="../css/rdv.css">
-    <link rel="stylesheet" href="../css/style.css">
-    
-    <title>Prendre rendez-vous</title>
 
+
+    <link rel="stylesheet" href="../css/carte.css">
+    <title>Infos pratiques</title>
 </head>
 <body>
+    <!-- <div class="fausseNavbar"></div> -->
     <nav>
         <div class="navbar">
             <div class="logo">
@@ -411,53 +418,38 @@
         </div>
     </nav>
 
-    <div class="containerRdv">
-        <div class="containerRdv1">
-            <div class="formulaireImage">
-                <img src="../img/personnalShoper/personalShoper.webp" alt="">
-            </div>
-            <div class="prendreRdv">
-                <div class="descriptionRdv">
-                    <h1>Personnal shoper</h1>
-                    <p>Un service exclusif offert sans minimum d'achat, disponible en magasin ou en ligne. <br>
-                    Où que vous soyez, nos Personal Shoppers vous guident parmi les 3 000 marques du Printemps, pour trouver la perle rare.</p>
+    <header class="tousleProduits">
+        <div class="containerTousLesProduits containerCarte" id>
+            <div class="carteDescription" >
+                <h1>Infos Pratiques</h1>
+                <div class="presentationInfo">
+                    <p>
+                        Bienvenue sur la page Infos Pratiques du Petit Commerce ! Retrouvez toutes les informations nécessaires pour nous trouver facilement, ainsi que notre numéro de téléphone. Consultez également notre carte pour découvrir l'adresse de notre boutique mère.
+                    </p>
                 </div>
+                <div class="adressInfo">
+                    <h3>Nostre adresse à Paris</h3>
+                    <p>15 Rue des Petits Champs, 75001 Paris</p>
+                  
+                </div>
+                <div class="numInfo">
+                    <h3>Notre standard</h3>
+                    <p>01 23 45 67 89</p>
+                </div>
+                <div class="nousEcrireInfo">
+                    <button class="cta">
+                        <a href="#">Nous écrire</a>
+                    </button>
+                </div>
+
+
+
+            </div>
+            <div class="carteMaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.573698012431!2d2.3359254159576492!3d48.86633900810079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e24cad27fd1%3A0x899b4ae43acb8be!2s15%20Rue%20des%20Petits%20Champs%2C%2075001%20Paris!5e0!3m2!1sen!2sfr!4v1680800623110!5m2!1sen!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
-        <div class="containerRdv2">
-            <h2>Prendre rendez-vous</h2>
-            <form action="#" method="post" class="formulaireRdv" id="myForm">
-                <div class="labelRdv">
-                    <label for="name">Nom de famille</label>
-                    <input id="name" placeholder="Dupont" name="name" type="text">
-
-                </div>
-                <div class="labelRdv">
-                    <label for="e-mail">Adresse e-mail</label>
-                    <input id="email" placeholder="xxx@xxx.com" name="email" type="email">
-
-                </div>
-                <div class="labelRdv">
-                    <label for="number">Numéro de contact</label>
-                    <input id="number" placeholder="06xxxxxxxx" name="number" type="number">
-
-                </div>
-                <div class="labelRdv">
-                    <label for="date">Choisissez votre date</label>
-                    <input id="date" name="date" type ="date" required="">
-                    
-                </div>
-                <div class="labelRdv">
-                    <label for="time">Entrer l'horaire souhaité</label>
-                    <input id="time" placeholder="Entrer l'horaire souhaité" name="time" type="time">
-
-                </div>
-                <button class="cta" id="buttonFormulaire">
-                    <a href="#">Prendre rendez-vous</a>
-                </button>
-            </form>
-        </div>
-    </div>
+    </header>
     <footer>
         <div class="containerFooter">
             <div class="footerPart footer1">
@@ -504,14 +496,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="../js/rdv.js"></script>
     <script src="https://kit.fontawesome.com/3c3a356350.js" crossorigin="anonymous"></script>
-    <script src="../js/navbar.js"></script>   
-
-    
-
-
+    <script src="../js/navbar.js"></script> 
 
     
 </body>
